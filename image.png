@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC_Responsive" transform="translate(-131.000000, -376.000000)" fill="#1EBEA5" fill-rule="nonzero">
+            <g id="Address-Copy-3" transform="translate(131.000000, 375.000000)">
+                <g id="Pin" transform="translate(0.000000, 1.000000)">
+                    <path d="M6,0.0785472289 C2.68629111,0.0785472289 0,2.7001041 0,5.93396675 C0,7.09947759 0.543233333,8.90553253 1.11111111,9.83758554 L6,17.8616819 L10.8888889,9.83758554 C11.4567778,8.90551084 12,7.09947759 12,5.93396675 C12,2.7001041 9.31371111,0.0785472289 6,0.0785472289 Z M6,3.33155711 C7.47276,3.33155711 8.66666667,4.49669928 8.66666667,5.93396675 C8.66666667,7.37121253 7.47276,8.53638072 6,8.53638072 C4.52724,8.53638072 3.33333333,7.37121253 3.33333333,5.93396675 C3.33333333,4.49669928 4.52724,3.33155711 6,3.33155711 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

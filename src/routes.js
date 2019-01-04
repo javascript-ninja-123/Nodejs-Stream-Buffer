@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs'
-
+import axios from 'axios';
+import {createUser} from './controllers/user'
 const routes =   (app) => {
     app.get('/', (req,res) => {
         res.status(200).send({message:"working on it"})
@@ -9,6 +10,9 @@ const routes =   (app) => {
     app.get('/google', (req,res) => {
         res.status(302).redirect('https://www.google.com/')
     })
+
+
+    app.post('/user', createUser)
     
     app.post('/write', (req,res) => {
         const body = []
@@ -75,6 +79,39 @@ const routes =   (app) => {
                 res.status(200).send({message:"saved"})
             })
         })
+    })
+
+
+
+    app.get('/user/:id', async (req,res) => {
+        const {id} = req.params;
+        console.log(name)
+        if(id){
+            try{
+                const {data} = await axios(`https://jsonplaceholder.typicode.com/users/${id}`)
+                res.status(200).send(data)
+            }
+            catch(err){
+            res.status(404).send({message:"not able to fetch data"})
+            }
+        }
+        else{
+            res.status(404).send({message:"no id"})
+        }
+    })
+
+    app.get('/user', async (req,res) => {
+
+        const {name} = req.query;
+        if(name){
+        const {data} = await axios(`https://jsonplaceholder.typicode.com/users`)
+        const result = data.find(value => value.name.toLowerCase().trim() === name.toLowerCase().trim())
+        res.status(200).send(result)
+        }
+        else{
+        res.status(404).send({message:"no name query"})  
+        }
+
     })
     
     
